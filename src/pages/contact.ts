@@ -58,12 +58,12 @@ export function contactPage(submitted: boolean = false, formData: Record<string,
         </div>
 
         <div class="contact-info-card">
-          <div class="contact-card-icon web-icon">
-            <i class="fas fa-globe"></i>
+          <div class="contact-card-icon email-icon">
+            <i class="fas fa-envelope"></i>
           </div>
-          <h3>Website</h3>
-          <span class="contact-card-value small">murphyslawnnlandscaping.com</span>
-          <p>Visit our Facebook page for photos, updates, and reviews from real customers.</p>
+          <h3>Email Us</h3>
+          <a href="mailto:murphylawnandlandscaping@gmail.com" class="contact-card-value small">murphylawnandlandscaping@gmail.com</a>
+          <p>Email us anytime — we respond within 1 business day.</p>
         </div>
       </div>
     </div>
@@ -78,11 +78,11 @@ export function contactPage(submitted: boolean = false, formData: Record<string,
         <div class="contact-form-side">
           <div class="contact-form-card">
             <h2><i class="fas fa-envelope"></i> Send Us a Message</h2>
-            <p>Have a question about our services, pricing, or availability? Drop us a message and we'll get back to you quickly!</p>
+            <p>Have a question about our services, pricing, or availability? Drop us a message and we'll get back to you quickly! All messages go directly to <a href="mailto:murphylawnandlandscaping@gmail.com" style="color:var(--green-mid);font-weight:600;">murphylawnandlandscaping@gmail.com</a>.</p>
 
             ${successMessage}
 
-            <form class="contact-form" method="POST" action="/contact">
+            <form class="contact-form" method="POST" action="/contact" id="contact-form">
               <div class="form-row">
                 <div class="form-group">
                   <label for="contact-name">Your Name <span class="required">*</span></label>

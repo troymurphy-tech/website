@@ -26,6 +26,7 @@ export function layout(title: string, content: string, currentPage: string = '')
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/static/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -35,7 +36,7 @@ export function layout(title: string, content: string, currentPage: string = '')
       <div class="top-bar-content">
         <span><i class="fas fa-map-marker-alt"></i> Westmoreland, Tennessee</span>
         <span><a href="tel:6156039791"><i class="fas fa-phone"></i> 615-603-9791</a></span>
-        <span class="domain-tag"><i class="fas fa-globe"></i> murphyslawnnlandscaping.com</span>
+        <span class="email-hide-mobile"><a href="mailto:murphylawnandlandscaping@gmail.com"><i class="fas fa-envelope"></i> murphylawnandlandscaping@gmail.com</a></span>
       </div>
     </div>
   </div>
@@ -79,6 +80,7 @@ export function layout(title: string, content: string, currentPage: string = '')
             <div>
               <div class="footer-logo-main">Murphy's Lawn &amp; Landscaping</div>
               <div class="footer-logo-domain">murphyslawnnlandscaping.com</div>
+            <div class="footer-logo-email"><a href="mailto:murphylawnandlandscaping@gmail.com"><i class="fas fa-envelope"></i> murphylawnandlandscaping@gmail.com</a></div>
             </div>
           </div>
           <p>Professional lawn care and landscaping services serving Westmoreland, TN and surrounding communities. Quality work, honest pricing, and a yard you'll love.</p>
@@ -119,6 +121,7 @@ export function layout(title: string, content: string, currentPage: string = '')
             <li><i class="fas fa-phone"></i> <a href="tel:6156039791">615-603-9791</a></li>
             <li><i class="fas fa-map-marker-alt"></i> Westmoreland, Tennessee</li>
             <li><i class="fas fa-clock"></i> Mon–Sat: 7:00 AM – 7:00 PM</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:murphylawnandlandscaping@gmail.com">murphylawnandlandscaping@gmail.com</a></li>
             <li><i class="fas fa-globe"></i> murphyslawnnlandscaping.com</li>
           </ul>
           <a href="/booking" class="btn btn-primary btn-sm" style="margin-top:1rem;">Get Free Quote</a>

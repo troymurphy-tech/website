@@ -151,6 +151,8 @@ input, select, textarea { font-family: inherit; }
 .top-bar-content a:hover { color: var(--white); }
 .top-bar-content i { font-size: 11px; }
 .domain-tag { font-weight: 600; color: #a5d6a7; }
+.top-bar-content .email-link a { color: #a5d6a7; font-weight: 600; }
+.top-bar-content .email-link a:hover { color: #fff; }
 
 /* =====================
    HEADER
@@ -1358,6 +1360,7 @@ input, select, textarea { font-family: inherit; }
 .location-icon { background: #fef3c7; color: #d97706; }
 .hours-icon { background: #dbeafe; color: #2563eb; }
 .web-icon { background: #f3e8ff; color: #7c3aed; }
+.email-icon { background: #dcfce7; color: var(--green-mid); }
 .contact-info-card h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; margin-bottom: 10px; }
 .contact-card-value { display: block; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 20px; color: var(--green-mid); margin-bottom: 8px; }
 .contact-card-value.small { font-size: 15px; }
@@ -1477,6 +1480,9 @@ input, select, textarea { font-family: inherit; }
   color: var(--white);
 }
 .footer-logo-domain { font-size: 12px; color: #a5d6a7; }
+.footer-logo-email { font-size: 12px; margin-top: 4px; }
+.footer-logo-email a { color: #81c784; text-decoration: none; }
+.footer-logo-email a:hover { color: #fff; }
 .footer-brand p { font-size: 14px; line-height: 1.7; margin-bottom: 24px; }
 .footer-social { display: flex; gap: 12px; }
 .footer-social a {
@@ -1589,8 +1595,9 @@ input, select, textarea { font-family: inherit; }
    ===================== */
 @media (max-width: 768px) {
   .section { padding: 56px 0; }
-  .top-bar-content { justify-content: center; }
+  .top-bar-content { justify-content: center; gap: 12px; }
   .domain-tag { display: none; }
+  .top-bar-content .email-hide-mobile { display: none; }
 
   .main-nav {
     position: fixed;

@@ -171,7 +171,7 @@ export function bookingPage(submitted: boolean = false, formData: Record<string,
                 <i class="fas fa-paper-plane"></i> Submit Quote Request
               </button>
 
-              <p class="form-note"><i class="fas fa-lock"></i> Your information is private and will never be shared. We'll respond within 1 business day.</p>
+              <p class="form-note"><i class="fas fa-lock"></i> Your request is sent directly to <strong>murphylawnandlandscaping@gmail.com</strong>. We'll respond within 1 business day.</p>
             </form>
           </div>
         </div>
