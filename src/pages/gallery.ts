@@ -137,7 +137,7 @@ export function galleryPage(): string {
             <h3>Are You a Murphy's Customer?</h3>
             <p>We'd love to feature your lawn! Send us your before &amp; after photos and we'll add them to the gallery.</p>
           </div>
-          <a href="/contact" class="btn btn-primary">Send Your Photos</a>
+          <a href="mailto:murphylawnandlandscaping@gmail.com?subject=Customer%20Photo%20Submission&body=Hi%20Murphy's!%20Here%20are%20my%20before%20%26%20after%20photos%20to%20add%20to%20the%20gallery.%0A%0AName%3A%20%0AAddress%3A%20%0A%0AThanks!" class="btn btn-primary">Send Your Photos</a>
         </div>
       </div>
     </div>
