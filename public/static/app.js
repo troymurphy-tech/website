@@ -231,21 +231,30 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 // =====================
-// LIGHTBOX (Gallery)
+// SERVICE DETAIL MODAL (Gallery)
 // =====================
-function openLightbox(src, caption) {
-  const lightbox = document.getElementById('lightbox')
-  const img      = document.getElementById('lightbox-img')
-  const cap      = document.getElementById('lightbox-caption')
-  if (lightbox && img) {
-    img.src = src; img.alt = caption
-    if (cap) cap.textContent = caption
-    lightbox.classList.add('active')
+function openServiceModal(id) {
+  const modal = document.getElementById(id)
+  if (modal) {
+    modal.classList.add('active')
     document.body.style.overflow = 'hidden'
+    // Scroll modal to top
+    const inner = modal.querySelector('.service-modal-inner')
+    if (inner) inner.scrollTop = 0
   }
 }
-function closeLightbox() {
-  const lightbox = document.getElementById('lightbox')
-  if (lightbox) { lightbox.classList.remove('active'); document.body.style.overflow = '' }
+function closeServiceModal(e, modal) {
+  // Only close if clicking the backdrop (not the inner content)
+  if (e.target === modal) {
+    modal.classList.remove('active')
+    document.body.style.overflow = ''
+  }
 }
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox() })
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.service-modal.active').forEach(m => {
+      m.classList.remove('active')
+      document.body.style.overflow = ''
+    })
+  }
+})
