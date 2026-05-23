@@ -20,7 +20,7 @@ export function layout(title: string, content: string, currentPage: string = '')
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Murphy's Lawn &amp; Landscaping - Professional lawn care and landscaping services in Westmoreland, Tennessee. Serving residential and commercial clients with mowing, cleanups, fertilization, and more.">
   <title>${title} | Murphy's Lawn &amp; Landscaping</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%232d7a35'/%3E%3Ctext y='.9em' font-size='40' x='12' fill='white'%3E🌿%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="/static/murphys-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -46,11 +46,7 @@ export function layout(title: string, content: string, currentPage: string = '')
     <div class="container">
       <div class="header-inner">
         <a href="/" class="logo">
-          <div class="logo-icon"><i class="fas fa-leaf"></i></div>
-          <div class="logo-text">
-            <span class="logo-main">Murphy's</span>
-            <span class="logo-sub">Lawn &amp; Landscaping</span>
-          </div>
+          <img src="/static/murphys-logo.png" alt="Murphy's Lawn and Landscaping LLC" class="logo-img">
         </a>
 
         <nav class="main-nav" id="main-nav">
@@ -76,7 +72,7 @@ export function layout(title: string, content: string, currentPage: string = '')
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">
-            <i class="fas fa-leaf"></i>
+            <img src="/static/murphys-logo.png" alt="Murphy's Lawn and Landscaping LLC" class="footer-logo-img">
             <div>
               <div class="footer-logo-main">Murphy's Lawn &amp; Landscaping</div>
               <div class="footer-logo-domain">murphyslawnnlandscaping.com</div>
