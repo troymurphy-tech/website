@@ -1523,6 +1523,66 @@ input, select, textarea { font-family: inherit; }
 .footer-contact a { color: rgba(255,255,255,0.75); }
 .footer-contact a:hover { color: var(--white); }
 
+/* Facebook Follow Bar */
+.footer-facebook-bar {
+  margin: 28px 0 0 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 28px;
+}
+.footer-facebook-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #1877f2;
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 18px rgba(24,119,242,0.35);
+}
+.footer-facebook-link:hover {
+  background: #1565d8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(24,119,242,0.5);
+}
+.fb-svg-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.fb-follow-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+}
+.fb-handle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* Gallery Real Job Badge */
+.gallery-real-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.gallery-real-badge i { font-size: 10px; }
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.1);
   padding: 24px 0;
@@ -1531,6 +1591,7 @@ input, select, textarea { font-family: inherit; }
   justify-content: space-between;
   font-size: 13px;
   color: rgba(255,255,255,0.5);
+  margin-top: 0;
 }
 .footer-bottom-domain { color: #a5d6a7; font-weight: 600; }
 
@@ -1638,6 +1699,8 @@ input, select, textarea { font-family: inherit; }
 
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .footer-facebook-link { flex-wrap: wrap; gap: 10px; }
+  .fb-handle { margin-left: 0; width: 100%; }
 
   .float-book-btn span { display: none; }
   .float-book-btn { padding: 16px; border-radius: 50%; font-size: 20px; }

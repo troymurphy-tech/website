@@ -85,7 +85,7 @@ export function layout(title: string, content: string, currentPage: string = '')
           </div>
           <p>Professional lawn care and landscaping services serving Westmoreland, TN and surrounding communities. Quality work, honest pricing, and a yard you'll love.</p>
           <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61573111775575" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://www.google.com" target="_blank" aria-label="Google"><i class="fab fa-google"></i></a>
           </div>
@@ -126,6 +126,15 @@ export function layout(title: string, content: string, currentPage: string = '')
           </ul>
           <a href="/booking" class="btn btn-primary btn-sm" style="margin-top:1rem;">Get Free Quote</a>
         </div>
+      </div>
+
+      <!-- Facebook Follow Bar -->
+      <div class="footer-facebook-bar">
+        <a href="https://www.facebook.com/profile.php?id=61573111775575" target="_blank" rel="noopener" class="footer-facebook-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fb-svg-icon"><path fill="#fff" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.93-1.956 1.883v2.271h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          <span class="fb-follow-text">Follow Us on Facebook</span>
+          <span class="fb-handle">@Murphy's Lawn &amp; Landscaping</span>
+        </a>
       </div>
 
       <div class="footer-bottom">
