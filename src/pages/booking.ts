@@ -126,9 +126,7 @@ export function bookingPage(submitted: boolean = false, formData: Record<string,
                     <select id="frequency" name="frequency">
                       <option value="" disabled selected>How often?</option>
                       <option value="Weekly">Weekly</option>
-                      <option value="Bi-Weekly">Bi-Weekly</option>
-                      <option value="Monthly">Monthly</option>
-                      <option value="One-Time">One-Time Service</option>
+                      <option value="10-Day">Every 10 Days</option>
                       <option value="Seasonal">Seasonal Package</option>
                     </select>
                   </div>
